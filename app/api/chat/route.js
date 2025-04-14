@@ -1,5 +1,3 @@
-'use server'
-
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 
 // Replace this with your actual OpenAI API key from Vercel env
