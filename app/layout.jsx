@@ -1,12 +1,6 @@
-
-export const metadata = {
-  title: "Microminimus Assistant",
-  description: "AI Sales Assistant for Microminimus",
-};
-
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body>{children}</body>
     </html>
   );
