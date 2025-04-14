@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
   const [messages, setMessages] = useState(["Hello! How can I assist you today?"]);
