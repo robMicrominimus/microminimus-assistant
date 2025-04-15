@@ -1,4 +1,4 @@
-import { buildProductPrompt } from "@/lib/productPromptBuilder";
+import { buildProductPrompt } from "../../../lib/productPromptBuilder";
 
 export async function POST(req) {
   const { prompt } = await req.json();
