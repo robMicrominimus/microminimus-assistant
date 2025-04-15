@@ -1,5 +1,3 @@
-// /lib/productPromptBuilder.js
-
 import { getProducts } from "./getProducts";
 
 export async function buildProductPrompt(limit = 5) {
@@ -8,8 +6,7 @@ export async function buildProductPrompt(limit = 5) {
 
     const formatted = products.map((p, index) => {
       return `${index + 1}. ${p.name} — $${p.price}
-` +
-        (p.attributes?.map(attr => `   - ${attr.name}: ${attr.options.join(", ")}`).join("\n") || "") +
+` + (p.attributes?.map(attr => `   - ${attr.name}: ${attr.options.join(", ")}`).join("\n") || "") +
         (p.description ? `\n   - Description: ${p.description}` : "") +
         (p.link ? `\n   - Link: ${p.link}` : "");
     });
